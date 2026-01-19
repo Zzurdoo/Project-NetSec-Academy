@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edpamstructure - Become a Network Architect</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Vanta.js Dependency: Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <!-- Vanta.js Effect: Net -->
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Global Background for Animation -->
+    <div id="vanta-bg"></div>
+
+    <div class="app-container">
+        <!-- Top Navigation Header -->
+        <!-- 3-Block Navigation Header -->
+        <header class="header-container">
+
+            <!-- Block 1: Main Navigation -->
+            <div class="nav-capsule nav-block-main">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" alt="NetSec Academy Logo" class="logo-img">
+                    </a>
+                </div>
+
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html" class="active-link">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </nav>
+
+                <button class="action-btn theme-toggle" id="theme-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Block 2: Social & Contact -->
+            <div class="nav-capsule nav-block-social">
+                <div class="social-actions">
+                    <a href="https://www.linkedin.com/in/fuadquluzade/" target="_blank" class="social-link"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://discord.gg/x5HX4yrg" target="_blank" class="social-link"><i
+                            class="fab fa-discord"></i></a>
+                </div>
+                <a href="contact.html" class="btn-contact">
+                    Contact <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Block 3: Auth & Language -->
+            <div class="nav-capsule nav-block-auth">
+                <a href="login.html" class="btn-login"><i class="fas fa-user-circle"></i> Login</a>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="EN">EN</button>
+                    <button class="lang-btn" data-lang="AZ">AZ</button>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- 1. Hero Section (Transparent - Content Only) -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h1>Become a Network Architect,<br>Not Just a Learner.</h1>
+                    <p class="hero-sub">Hands-on labs, AI-driven support, and a community of 5,000+ engineers.</p>
+                    <div class="hero-buttons">
+                        <a href="login.html" class="btn-explore">Get Started for Free</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. "Why Choose Us?" (Glassmorphism Cards) -->
+            <section class="why-us-section">
+                <div class="section-header">
+                    <h2>Why Choose Us?</h2>
+                    <p>Experience the future of network engineering education.</p>
+                </div>
+                <div class="why-us-grid">
+                    <!-- Card 1 -->
+                    <div class="glass-card">
+                        <div class="card-icon-lg blue"><i class="fas fa-headset"></i></div>
+                        <h3>24/7 Professional Support</h3>
+                        <p>Get instant solutions from our specialized AI mentor, trained on thousands of network
+                            scenarios.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="glass-card">
+                        <div class="card-icon-lg purple"><i class="fab fa-discord"></i></div>
+                        <h3>Vibrant Community</h3>
+                        <p>Don't learn alone. Collaborate on live labs and real-world scenarios with peers in our
+                            Discord.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="glass-card">
+                        <div class="card-icon-lg orange"><i class="fas fa-map-signs"></i></div>
+                        <h3>Concrete Roadmap</h3>
+                        <p>Follow a structured path. We simplify complex protocols like BGP & OSPF into actionable
+                            steps.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Our Mission (Typography) -->
+            <section class="mission-section">
+                <div class="mission-content">
+                    <h2>Our Mission</h2>
+                    <p class="mission-text">
+                        We aim to provide the right guidance for <span class="highlight-text">enthusiasts</span> and
+                        <span class="highlight-text">beginners</span> in networking.
+                        We aim to demonstrate that mastering this field is entirely possible through <span
+                            class="highlight-text">disciplined self-study</span>
+                        and the right resources.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 4. Featured Courses -->
+            <section class="course-section">
+                <div class="section-header">
+                    <h2>Featured Courses</h2>
+                    <p>Start your journey to mastery.</p>
+                </div>
+
+                <div class="course-grid">
+                    <!-- Course 1 -->
+                    <div class="course-card card-blue">
+                        <div class="card-icon"><i class="fas fa-desktop"></i></div>
+                        <h3>IT Essentials</h3>
+                        <p class="course-desc">Start here. Learn the fundamentals of computer hardware, software, and
+                            basic networking concepts.</p>
+                        <div class="card-actions">
+                            <button class="btn-enroll">Start Learning</button>
+                        </div>
+                    </div>
+
+                    <!-- Course 2 -->
+                    <div class="course-card card-orange">
+                        <div class="card-icon"><i class="fas fa-certificate"></i></div>
+                        <h3>CCNA prep</h3>
+                        <p class="course-desc">Comprehensive preparation for the Cisco Certified Network Associate exam.
+                            Master routing and switching.</p>
+                        <div class="card-actions">
+                            <button class="btn-enroll">Start Learning</button>
+                        </div>
+                    </div>
+
+                    <!-- Course 3 -->
+                    <div class="course-card card-purple">
+                        <div class="card-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3>CCNP prep</h3>
+                        <p class="course-desc">Advance your career with Enterprise Core technologies. Deep dive into
+                            security, automation, and architecture.</p>
+                        <div class="card-actions">
+                            <button class="btn-enroll">Start Learning</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="view-all-container">
+                    <a href="courses.html" class="btn-view-all">View All Courses <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- 5. Community & Social Preview -->
+            <section class="community-section">
+                <div class="community-grid">
+                    <!-- Discord Box (Left) -->
+                    <div class="community-box discord-box">
+                        <div class="community-text">
+                            <h2>Don't Study Alone.</h2>
+                            <p>Join our Discord labs and collaborate with peers in real-time.</p>
+                            <a href="https://discord.gg/x5HX4yrg" target="_blank" class="btn-discord-large"><i
+                                    class="fab fa-discord"></i> Join
+                                Community Labs</a>
+                        </div>
+                        <div class="community-visual">
+                            <!-- Mockup of Discord Activity -->
+                            <div class="discord-mockup">
+                                <div class="discord-message">
+                                    <img src="https://via.placeholder.com/40" class="avatar" alt="User">
+                                    <div class="msg-content">
+                                        <span class="username">NetNinja</span>
+                                        <p>Can someone check my OSPF config in Lab Room 3?</p>
+                                    </div>
+                                </div>
+                                <div class="discord-message">
+                                    <img src="https://via.placeholder.com/40" class="avatar" alt="User">
+                                    <div class="msg-content">
+                                        <span class="username">Admin_Bot</span>
+                                        <p>@NetNinja Support ticket created. An instructor is on the way!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LinkedIn Box (Right) -->
+                    <div class="community-box linkedin-box">
+                        <div class="community-text">
+                            <h2>Connect Professionally.</h2>
+                            <p>Network with industry experts and alumni on LinkedIn.</p>
+                            <a href="https://www.linkedin.com/in/fuadquluzade/" target="_blank"
+                                class="btn-linkedin-large"><i class="fab fa-linkedin-in"></i>
+                                Follow on LinkedIn</a>
+                        </div>
+                        <div class="community-visual">
+                            <!-- Mockup of LinkedIn Activity -->
+                            <div class="linkedin-mockup">
+                                <div class="linkedin-post">
+                                    <img src="https://via.placeholder.com/40" class="avatar" alt="User">
+                                    <div class="msg-content">
+                                        <span class="username">Sarah Chen</span>
+                                        <p>Just passed my CCNA! Thanks to NetSec Academy's amazing labs.</p>
+                                    </div>
+                                </div>
+                                <div class="linkedin-post">
+                                    <img src="https://via.placeholder.com/40" class="avatar" alt="User">
+                                    <div class="msg-content">
+                                        <span class="username">NetSec Academy</span>
+                                        <p>Congratulations Sarah! 🎉 Your hard work paid off!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer Section -->
+            <footer class="site-footer">
+                <!-- Contact Cards -->
+                <div class="footer-contact-cards">
+                    <div class="contact-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <div class="contact-info">
+                            <h4>WHATSAPP</h4>
+                            <p>+994 XX XXX XX XX</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-info">
+                            <h4>EMAIL</h4>
+                            <p>info@netsecacademy.edu.az</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Main Content -->
+                <div class="footer-content">
+                    <div class="footer-column footer-about">
+                        <img src="assets/images/logo.svg" alt="NetSec Academy" class="footer-logo">
+                        <p>Empowering the next generation of cybersecurity professionals through hands-on training,
+                            real-world labs, and industry-recognized certifications. Join us in fortifying your future.
+                        </p>
+                        <div class="footer-social">
+                            <a href="https://www.linkedin.com/in/fuadquluzade/" target="_blank" aria-label="LinkedIn"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="https://discord.gg/x5HX4yrg" target="_blank" aria-label="Discord"><i
+                                    class="fab fa-discord"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Courses</h3>
+                        <ul>
+                            <li><a href="courses.html">IT Essentials</a></li>
+                            <li><a href="courses.html">CCNA Prep</a></li>
+                            <li><a href="courses.html">CCNP Prep</a></li>
+                            <li><a href="courses.html">All Courses</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <p>&copy; 2026 NetSec Academy. All rights reserved.</p>
+                    <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+        <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close Menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="active-link">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="forum.html">Forum</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-auth-social">
+            <div class="mobile-social-row">
+                <a href="https://www.linkedin.com/in/fuadquluzade/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://discord.gg/x5HX4yrg" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
+            <!-- Reusing .lang-switcher logic but simplified for mobile (or keep same classes) -->
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="EN">EN</button>
+                <button class="lang-btn" data-lang="AZ">AZ</button>
+            </div>
+            <a href="login.html" class="mobile-btn-login"><i class="fas fa-user-circle"></i> Login</a>
+        </div>
+    </div>
+
+    <!-- Google Translate Hidden Container -->
+    <div id="google_translate_element" style="display: none;"></div>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

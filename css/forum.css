@@ -1,0 +1,244 @@
+/* Forum Specific Styles */
+
+.forum-layout {
+    padding-top: 100px;
+    /* Space for top header */
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.forum-hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: radial-gradient(circle at center, rgba(0, 242, 254, 0.05) 0%, transparent 60%);
+}
+
+.forum-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    background: linear-gradient(120deg, #fff, var(--accent-cyan));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.forum-hero p {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.forum-search {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.forum-search input {
+    width: 100%;
+    padding: 15px 50px 15px 25px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(11, 17, 32, 0.6);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.forum-search input:focus {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
+}
+
+.forum-search button {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.forum-search button:hover {
+    color: var(--accent-cyan);
+}
+
+/* Container */
+.forum-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 40px;
+    padding: 20px;
+}
+
+/* Sidebar */
+.forum-sidebar .sidebar-block {
+    background: rgba(11, 17, 32, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.forum-sidebar h3 {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+}
+
+.category-list {
+    list-style: none;
+}
+
+.category-list li {
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--text-secondary);
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.category-list li:hover,
+.category-list li.active {
+    background: rgba(0, 242, 254, 0.1);
+    color: var(--accent-cyan);
+}
+
+.category-list li i {
+    width: 20px;
+}
+
+/* Topic Feed */
+.feed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.feed-header h2 {
+    font-size: 1.5rem;
+}
+
+.btn-new-topic {
+    background: var(--accent-cyan);
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.btn-new-topic:hover {
+    transform: scale(1.05);
+}
+
+/* Topic Items */
+.topic-item {
+    background: rgba(11, 17, 32, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.topic-item:hover {
+    background: rgba(11, 17, 32, 0.9);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateX(5px);
+}
+
+.topic-vote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-secondary);
+    min-width: 40px;
+}
+
+.topic-vote i {
+    cursor: pointer;
+}
+
+.topic-vote i:hover {
+    color: var(--accent-orange);
+}
+
+.topic-content {
+    flex: 1;
+}
+
+.topic-content h3 a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.topic-content h3 a:hover {
+    color: var(--accent-cyan);
+}
+
+.topic-meta {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.tag {
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.tag-blue {
+    background: rgba(0, 242, 254, 0.2);
+    color: var(--accent-cyan);
+}
+
+.tag-orange {
+    background: rgba(255, 179, 71, 0.2);
+    color: var(--accent-orange);
+}
+
+.tag-purple {
+    background: rgba(157, 78, 255, 0.2);
+    color: var(--accent-purple);
+}
+
+.topic-stats {
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+}

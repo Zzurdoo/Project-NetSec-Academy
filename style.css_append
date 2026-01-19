@@ -1,0 +1,12 @@
+/* --- Logo --- */
+.logo {
+    display: flex;
+    align-items: center;
+    /* Removed large font styling since it's an image now */
+}
+
+.logo-img {
+    height: 40px; /* Constrain height to fit navbar */
+    width: auto;
+    object-fit: contain;
+}

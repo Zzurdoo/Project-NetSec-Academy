@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - NetSec Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Vanta.js Dependency -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+</head>
+
+<body>
+    <!-- Global Background -->
+    <div id="vanta-bg"></div>
+
+    <div class="app-container">
+        <!-- Top Navigation Header -->
+        <!-- 3-Block Navigation Header -->
+        <header class="header-container">
+
+            <!-- Block 1: Main Navigation -->
+            <div class="nav-capsule nav-block-main">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" alt="NetSec Academy Logo" class="logo-img">
+                    </a>
+                </div>
+
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="courses.html" class="active-link">Courses</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </nav>
+
+                <button class="action-btn theme-toggle" id="theme-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Block 2: Social & Contact -->
+            <div class="nav-capsule nav-block-social">
+                <div class="social-actions">
+                    <a href="https://www.linkedin.com/in/fuadquluzade/" target="_blank" class="social-link"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://discord.gg/x5HX4yrg" target="_blank" class="social-link"><i
+                            class="fab fa-discord"></i></a>
+                </div>
+                <a href="contact.html" class="btn-contact">
+                    Contact <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Block 3: Auth & Language -->
+            <div class="nav-capsule nav-block-auth">
+                <a href="login.html" class="btn-login"><i class="fas fa-user-circle"></i> Login</a>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="EN">EN</button>
+                    <button class="lang-btn" data-lang="AZ">AZ</button>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content courses-page">
+
+            <section class="courses-hero">
+                <h1>Master Network Engineering</h1>
+                <p>Browse our extensive catalog of courses designed for modern infrastructure.</p>
+                <div class="course-search">
+                    <input type="text" id="course-search-input"
+                        placeholder="What do you want to learn? (e.g. BGP, Python)">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </section>
+
+            <div class="catalog-container">
+                <!-- Course Grid -->
+                <section class="courses-grid-wrapper">
+                    <div class="courses-grid" id="courses-grid">
+
+                        <!-- Course Card 1 -->
+                        <div class="course-item" data-level="beginner" data-topic="networking">
+                            <div class="course-thumb">
+                                <i class="fas fa-network-wired"></i>
+                                <span class="badge beginner">Beginner</span>
+                            </div>
+                            <div class="course-details">
+                                <h3>IT Essentials & Networking Basics</h3>
+                                <p class="instructor">By Alex Roe</p>
+                                <div class="ratings">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                    <span>(4.8)</span>
+                                </div>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-video"></i> 12h video</span>
+                                    <span><i class="fas fa-flask"></i> 20 labs</span>
+                                </div>
+                                <a href="#" class="btn-course-enroll">View Course</a>
+                            </div>
+                        </div>
+
+                        <!-- Course Card 2 -->
+                        <div class="course-item" data-level="intermediate" data-topic="networking">
+                            <div class="course-thumb">
+                                <i class="fas fa-server"></i>
+                                <span class="badge intermediate">Intermediate</span>
+                            </div>
+                            <div class="course-details">
+                                <h3>CCNA 200-301 Complete Masterclass</h3>
+                                <p class="instructor">By Sarah Smith</p>
+                                <div class="ratings">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <span>(5.0)</span>
+                                </div>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-video"></i> 45h video</span>
+                                    <span><i class="fas fa-flask"></i> 80 labs</span>
+                                </div>
+                                <a href="#" class="btn-course-enroll">View Course</a>
+                            </div>
+                        </div>
+
+                        <!-- Course Card 3 -->
+                        <div class="course-item" data-level="advanced" data-topic="security">
+                            <div class="course-thumb">
+                                <i class="fas fa-shield-alt"></i>
+                                <span class="badge advanced">Advanced</span>
+                            </div>
+                            <div class="course-details">
+                                <h3>Network Security & Firewalls</h3>
+                                <p class="instructor">By Sarah Smith</p>
+                                <div class="ratings">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="far fa-star"></i>
+                                    <span>(4.2)</span>
+                                </div>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-video"></i> 20h video</span>
+                                    <span><i class="fas fa-flask"></i> 35 labs</span>
+                                </div>
+                                <a href="#" class="btn-course-enroll">View Course</a>
+                            </div>
+                        </div>
+
+                        <!-- Course Card 4 -->
+                        <div class="course-item" data-level="intermediate" data-topic="automation">
+                            <div class="course-thumb">
+                                <i class="fab fa-python"></i>
+                                <span class="badge intermediate">Intermediate</span>
+                            </div>
+                            <div class="course-details">
+                                <h3>Python for Network Engineers</h3>
+                                <p class="instructor">By David Chen</p>
+                                <div class="ratings">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                    <span>(4.7)</span>
+                                </div>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-video"></i> 15h video</span>
+                                    <span><i class="fas fa-flask"></i> 50 scripts</span>
+                                </div>
+                                <a href="#" class="btn-course-enroll">View Course</a>
+                            </div>
+                        </div>
+
+                        <!-- Course Card 5 -->
+                        <div class="course-item" data-level="advanced" data-topic="networking">
+                            <div class="course-thumb">
+                                <i class="fas fa-project-diagram"></i>
+                                <span class="badge advanced">Advanced</span>
+                            </div>
+                            <div class="course-details">
+                                <h3>BGP Deep Dive: Service Provider</h3>
+                                <p class="instructor">By Alex Roe</p>
+                                <div class="ratings">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <span>(4.9)</span>
+                                </div>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-video"></i> 18h video</span>
+                                    <span><i class="fas fa-flask"></i> 15 labs</span>
+                                </div>
+                                <a href="#" class="btn-course-enroll">View Course</a>
+                            </div>
+                        </div>
+
+                        <!-- Course Card 6 -->
+                        <div class="course-item" data-level="beginner" data-topic="cloud">
+                            <div class="course-thumb">
+                                <i class="fas fa-cloud"></i>
+                                <span class="badge beginner">Beginner</span>
+                            </div>
+                            <div class="course-details">
+                                <h3>AWS Certified Cloud Practitioner</h3>
+                                <p class="instructor">By David Chen</p>
+                                <div class="ratings">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="far fa-star"></i>
+                                    <span>(4.5)</span>
+                                </div>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-video"></i> 10h video</span>
+                                    <span><i class="fas fa-flask"></i> Quiz included</span>
+                                </div>
+                                <a href="#" class="btn-course-enroll">View Course</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+            <!-- Footer -->
+            <footer class="site-footer">
+                <!-- Contact Cards -->
+                <div class="footer-contact-cards">
+                    <div class="contact-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <div class="contact-info">
+                            <h4>WHATSAPP</h4>
+                            <p>+994 XX XXX XX XX</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-info">
+                            <h4>EMAIL</h4>
+                            <p>info@netsecacademy.edu.az</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Main Content -->
+                <div class="footer-content">
+                    <div class="footer-column footer-about">
+                        <img src="assets/images/logo.svg" alt="NetSec Academy" class="footer-logo">
+                        <p>Empowering the next generation of cybersecurity professionals through hands-on training,
+                            real-world labs, and industry-recognized certifications. Join us in fortifying your future.
+                        </p>
+                        <div class="footer-social">
+                            <a href="https://www.linkedin.com/in/fuadquluzade/" target="_blank" aria-label="LinkedIn"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="https://discord.gg/x5HX4yrg" target="_blank" aria-label="Discord"><i
+                                    class="fab fa-discord"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Courses</h3>
+                        <ul>
+                            <li><a href="courses.html">IT Essentials</a></li>
+                            <li><a href="courses.html">CCNA Prep</a></li>
+                            <li><a href="courses.html">CCNP Prep</a></li>
+                            <li><a href="courses.html">All Courses</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <p>&copy; 2026 NetSec Academy. All rights reserved.</p>
+                    <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+        <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close Menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="courses.html" class="active-link">Courses</a></li>
+            <li><a href="forum.html">Forum</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-auth-social">
+            <div class="mobile-social-row">
+                <a href="https://www.linkedin.com/in/fuadquluzade/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://discord.gg/x5HX4yrg" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="EN">EN</button>
+                <button class="lang-btn" data-lang="AZ">AZ</button>
+            </div>
+            <a href="login.html" class="mobile-btn-login"><i class="fas fa-user-circle"></i> Login</a>
+        </div>
+    </div>
+
+    <!-- Google Translate Hidden Container -->
+    <div id="google_translate_element" style="display: none;"></div>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script src="script.js"></script>
+    <script src="js/courses.js"></script>
+</body>
+
+</html>

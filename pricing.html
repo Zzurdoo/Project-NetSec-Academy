@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - NetSec Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/pricing.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Vanta.js Dependency -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+</head>
+
+<body>
+    <!-- Global Background -->
+    <div id="vanta-bg"></div>
+
+    <div class="app-container">
+        <!-- Top Navigation Header -->
+        <!-- 3-Block Navigation Header -->
+        <header class="header-container">
+
+            <!-- Block 1: Main Navigation -->
+            <div class="nav-capsule nav-block-main">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" alt="NetSec Academy Logo" class="logo-img">
+                    </a>
+                </div>
+
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="pricing.html" class="active-link">Pricing</a></li>
+                    </ul>
+                </nav>
+
+                <button class="action-btn theme-toggle" id="theme-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Block 2: Social & Contact -->
+            <div class="nav-capsule nav-block-social">
+                <div class="social-actions">
+                    <a href="https://www.linkedin.com/in/fuadquluzade/" target="_blank" class="social-link"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://discord.gg/x5HX4yrg" target="_blank" class="social-link"><i
+                            class="fab fa-discord"></i></a>
+                </div>
+                <a href="contact.html" class="btn-contact">
+                    Contact <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Block 3: Auth & Language -->
+            <div class="nav-capsule nav-block-auth">
+                <a href="login.html" class="btn-login"><i class="fas fa-user-circle"></i> Login</a>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="EN">EN</button>
+                    <button class="lang-btn" data-lang="AZ">AZ</button>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content pricing-page">
+
+            <section class="pricing-hero">
+                <h1>Flexible Plans for Your Journey</h1>
+                <p>Choose the plan that fits your learning pace and career goals.</p>
+
+                <div class="pricing-toggle">
+                    <span class="period active">Monthly</span>
+                    <label class="switch">
+                        <input type="checkbox" id="pricing-switch">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="period">Yearly <span class="discount">-20%</span></span>
+                </div>
+            </section>
+
+            <section class="pricing-section">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="0" data-yearly="0">0</span>
+                            <span class="duration">/mo</span>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Access to Forum</li>
+                        <li><i class="fas fa-check"></i> Basic Networking Course</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Advanced Labs</li>
+                        <li class="disabled"><i class="fas fa-times"></i> 1-on-1 Mentorship</li>
+                    </ul>
+                    <a href="#" class="btn-plan">Get Started</a>
+                </div>
+
+                <!-- Pro Plan (Highlighted) -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="card-header">
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="29" data-yearly="24">29</span>
+                            <span class="duration">/mo</span>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> All Courses (CCNA/CCNP)</li>
+                        <li><i class="fas fa-check"></i> 50+ Virtual Labs</li>
+                        <li><i class="fas fa-check"></i> Priority Forum Support</li>
+                        <li class="disabled"><i class="fas fa-times"></i> 1-on-1 Mentorship</li>
+                    </ul>
+                    <a href="#" class="btn-plan btn-primary">Start Free Trial</a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Architect</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="99" data-yearly="79">99</span>
+                            <span class="duration">/mo</span>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> All Access Pass</li>
+                        <li><i class="fas fa-check"></i> Real Hardware Access</li>
+                        <li><i class="fas fa-check"></i> 1-on-1 Mentorship</li>
+                        <li><i class="fas fa-check"></i> Career Coaching</li>
+                    </ul>
+                    <a href="#" class="btn-plan">Contact Sales</a>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="site-footer">
+                <!-- Contact Cards -->
+                <div class="footer-contact-cards">
+                    <div class="contact-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <div class="contact-info">
+                            <h4>WHATSAPP</h4>
+                            <p>+994 XX XXX XX XX</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-info">
+                            <h4>EMAIL</h4>
+                            <p>info@netsecacademy.edu.az</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Main Content -->
+                <div class="footer-content">
+                    <div class="footer-column footer-about">
+                        <img src="assets/images/logo.svg" alt="NetSec Academy" class="footer-logo">
+                        <p>Empowering the next generation of cybersecurity professionals through hands-on training,
+                            real-world labs, and industry-recognized certifications. Join us in fortifying your future.
+                        </p>
+                        <div class="footer-social">
+                            <a href="https://www.linkedin.com/in/fuadquluzade/" target="_blank" aria-label="LinkedIn"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="https://discord.gg/x5HX4yrg" target="_blank" aria-label="Discord"><i
+                                    class="fab fa-discord"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Courses</h3>
+                        <ul>
+                            <li><a href="courses.html">IT Essentials</a></li>
+                            <li><a href="courses.html">CCNA Prep</a></li>
+                            <li><a href="courses.html">CCNP Prep</a></li>
+                            <li><a href="courses.html">All Courses</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <p>&copy; 2026 NetSec Academy. All rights reserved.</p>
+                    <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+        <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close Menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="forum.html">Forum</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="pricing.html" class="active-link">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-auth-social">
+            <div class="mobile-social-row">
+                <a href="https://www.linkedin.com/in/fuadquluzade/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://discord.gg/x5HX4yrg" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="EN">EN</button>
+                <button class="lang-btn" data-lang="AZ">AZ</button>
+            </div>
+            <a href="login.html" class="mobile-btn-login"><i class="fas fa-user-circle"></i> Login</a>
+        </div>
+    </div>
+
+    <!-- Google Translate Hidden Container -->
+    <div id="google_translate_element" style="display: none;"></div>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script src="script.js"></script>
+    <script src="js/pricing.js"></script>
+</body>
+
+</html>

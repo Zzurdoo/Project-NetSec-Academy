@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 55" fill="none">
+  <!-- Box around NetSec -->
+  <rect x="2" y="5" width="110" height="45" stroke="#ffffff" stroke-width="2"/>
+  
+  <!-- NetSec Text -->
+  <text x="12" y="36" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="28">NetSec</text>
+  
+  <!-- Academy Text -->
+  <text x="120" y="36" fill="#ffffff" font-family="sans-serif" font-weight="normal" font-size="28">Academy</text>
+</svg>
